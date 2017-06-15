@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Student" xmlns:tns="http://www.example.org/Student" elementFormDefault="qualified">
+
+
+    <complexType name="Student">
+    	<sequence>
+    		<element name="studentId" type="int"></element>
+    		<element name="name" type="string"></element>
+    		<element name="marks" type="tns:Marks" minOccurs="1"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="address" type="tns:Address"></element>
+    	</sequence>
+    </complexType>
+    <complexType name="Address">
+    	<sequence>
+    		<element name="street" type="string"></element>
+    		<element name="state" type="string"></element>
+    		<element name="zipcode" type="int"></element>
+    		<element name="type">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="HOME"></enumeration>
+    					<enumeration value="COMMUNICATION"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="Marks">
+    	<sequence>
+    		<element name="subject" type="string"></element>
+    		<element name="marks" type="double"></element>
+    		<element name="maxMarks" type="double"></element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="Element" type="tns:Student"></element>
+</schema>

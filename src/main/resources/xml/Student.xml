@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Element xmlns:tns="http://www.example.org/Student" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Student ../xsd/Student.xsd ">
+  <tns:studentId>0</tns:studentId>
+  <tns:name>tns:name</tns:name>
+  <tns:marks>
+    <tns:subject>tns:subject</tns:subject>
+    <tns:marks>0.0</tns:marks>
+    <tns:maxMarks>0.0</tns:maxMarks>
+  </tns:marks>
+  <tns:address>
+    <tns:street>tns:street</tns:street>
+    <tns:state>tns:state</tns:state>
+    <tns:zipcode>0</tns:zipcode>
+    <tns:type>HOME</tns:type>
+  </tns:address>
+</tns:Element>
