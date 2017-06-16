@@ -11,6 +11,6 @@
     <tns:street>tns:street</tns:street>
     <tns:state>tns:state</tns:state>
     <tns:zipcode>0</tns:zipcode>
-    <tns:type>HOME</tns:type>
+    <tns:type>COMMUNICATION</tns:type>
   </tns:address>
 </tns:Element>
